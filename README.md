@@ -9,8 +9,9 @@
 ![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 ![Design](https://img.shields.io/badge/system-Anti--Theft-red.svg)
 
-A concealed and reprogrammable smart anti-theft system designed using Verilog HDL and system verilog for high-end vehicles such as Porsche. This project enhances security by detecting unauthorized access, activating an audible alarm, and securely disabling the fuel pump unless the correct hidden owner-authenticated sequence is performed.
 ---
+A concealed and reprogrammable smart anti-theft system designed using Verilog HDL and system verilog for high-end vehicles such as Porsche. This project enhances security by detecting unauthorized access, activating an audible alarm, and securely disabling the fuel pump unless the correct hidden owner-authenticated sequence is performed.
+
 
 ## 📌 Table of Contents
 
@@ -31,18 +32,24 @@ A concealed and reprogrammable smart anti-theft system designed using Verilog HD
 
 ## 🧩 Overview
 
-This Verilog HDL project implements a smart automotive anti-theft system simulating Porsche-style security features. The system:
-- Automatically arms itself after the driver exits
-- Monitors door sensors
-- Starts a countdown when intrusion is detected
-- Sounds an alarm if no valid disarm is received
-- Blocks the fuel pump unless a secret brake + hidden switch combo is pressed
+Imagine someone buys a fancy new car, like a Porsche. It already has a built-in anti-theft system, but the owner is still worried that thieves might know how to disable it. So, our job was to design a smarter, hidden anti-theft system that’s harder to bypass — something only the owner knows how to deactivate. So, we need a system that:
+o	Automatically turns on after the driver leaves the car.
+o	Detects if someone opens the car door.
+o	Gives the real owner some time to start the car before sounding an alarm.
+o	Triggers a loud siren if the car is being accessed wrongly.
+o	Blocks the fuel pump secretly, so even if someone disables the siren, they can't drive away.
 
-All inputs are debounced and synchronized. The design is modular, testbench-driven, and verified using ModelSim.
+## How the System Works 
+Think of the system like a guard dog that:
+o	Sleeps quietly until you leave the house.
+o	Starts watching when the house is empty.
+o	If someone opens the door, it gives them a few seconds — if they don’t prove they belong, it starts barking (alarm).
+o	And secretly, it locks the fuel line so even if the thief stops the barking, the car won’t move.
+
 
 ---
 
-## 🛡️ Features
+## 🛡️ Major Features
 
 | Feature               | Description                                                                 |
 |-----------------------|-----------------------------------------------------------------------------|
@@ -54,18 +61,20 @@ All inputs are debounced and synchronized. The design is modular, testbench-driv
 | **Configurable Timers**| Reprogrammable delay values for arm, driver, passenger, and alarm intervals |
 
 ---
-
 ## 📊 System Diagram
 
-> _Replace the image below with your system block diagram screenshot (e.g., image.png)._
+![System Diagram](https://github.com/user-attachments/assets/a5fed45a-767d-456a-9b54-c06c48a949d0)
 
-![System Diagram](<path-to-system-diagram>)
+---
+
+## 📊 Block Diagram
+
+![Block Diagram](https://github.com/user-attachments/assets/a9d8ab87-3d3f-4e11-93dd-da52cccc5eb8)
 
 ---
 
 ## 🔁 FSM Diagram
 
-> _Replace the image below with your FSM diagram showing states like Armed, Triggered, Alarm, Disarmed._
 
 ![FSM Diagram](<path-to-fsm-diagram>)
 
