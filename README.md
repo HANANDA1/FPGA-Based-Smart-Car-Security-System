@@ -12,6 +12,7 @@
 ---
 A concealed and reprogrammable smart anti-theft system designed using Verilog HDL and system verilog for high-end vehicles such as Porsche. This project enhances security by detecting unauthorized access, activating an audible alarm, and securely disabling the fuel pump unless the correct hidden owner-authenticated sequence is performed.
 
+![Overview](https://github.com/user-attachments/assets/816f66b0-ebda-4f4c-8c5c-d8bd88b1f953)
 
 ## 📌 Table of Contents
 
@@ -31,14 +32,9 @@ A concealed and reprogrammable smart anti-theft system designed using Verilog HD
 ---
 
 ## 🧩 Overview
+![Requirements](https://github.com/user-attachments/assets/05d98c02-13f2-4dd2-b8a9-c99020dce5f6)
 
-Imagine someone buys a fancy new car, like a Porsche. It already has a built-in anti-theft system, but the owner is still worried that thieves might know how to disable it. So, our job was to design a smarter, hidden anti-theft system that’s harder to bypass — something only the owner knows how to deactivate. So, we need a system that:
-o	Automatically turns on after the driver leaves the car.
-o	Detects if someone opens the car door.
-o	Gives the real owner some time to start the car before sounding an alarm.
-o	Triggers a loud siren if the car is being accessed wrongly.
-o	Blocks the fuel pump secretly, so even if someone disables the siren, they can't drive away.
-
+---
 ## How the System Works 
 Think of the system like a guard dog that:
 o	Sleeps quietly until you leave the house.
@@ -46,48 +42,35 @@ o	Starts watching when the house is empty.
 o	If someone opens the door, it gives them a few seconds — if they don’t prove they belong, it starts barking (alarm).
 o	And secretly, it locks the fuel line so even if the thief stops the barking, the car won’t move.
 
-
 ---
 
 ## 🛡️ Major Features
 
-| Feature               | Description                                                                 |
-|-----------------------|-----------------------------------------------------------------------------|
-| **Auto-Arming**       | Activates automatically when ignition is off and all doors are closed       |
-| **Countdown Timer**   | Starts countdown on door opening, awaits ignition input                     |
-| **Siren Alarm**       | Loud siren triggered if countdown expires without valid disarm              |
-| **Fuel Pump Lock**    | Blocks fuel pump unless correct disarm combo (brake + hidden switch)        |
-| **LED Indicator**     | Blinks in Armed mode, stays solid in Triggered and Alarm modes              |
-| **Configurable Timers**| Reprogrammable delay values for arm, driver, passenger, and alarm intervals |
+![Features](https://github.com/user-attachments/assets/08a4c65b-4b0b-421e-913d-a95b4a74900d)
 
 ---
 ## 📊 System Diagram
 
-![System Diagram](https://github.com/user-attachments/assets/a5fed45a-767d-456a-9b54-c06c48a949d0)
+![System Diagram](https://github.com/user-attachments/assets/a9d8ab87-3d3f-4e11-93dd-da52cccc5eb8)
 
 ---
 
 ## 📊 Block Diagram
 
-![Block Diagram](https://github.com/user-attachments/assets/a9d8ab87-3d3f-4e11-93dd-da52cccc5eb8)
+![Block Diagram](https://github.com/user-attachments/assets/a5fed45a-767d-456a-9b54-c06c48a949d0)
 
 ---
 
 ## 🔁 FSM Diagram
 
-
-![FSM Diagram](<path-to-fsm-diagram>)
+![FSM 1](https://github.com/user-attachments/assets/9ef9ec2d-25ab-4e28-b11f-5a8acdf068b6)
+![FSM 2](https://github.com/user-attachments/assets/531ca61f-ab6d-437d-88b2-84e6d049efc8)
 
 ---
 
 ## ⏱️ Timing Parameters
 
-| Interval              | Symbol           | Default Time (sec) | Binary Value |
-|-----------------------|------------------|---------------------|--------------|
-| Arming Delay          | `T_ARM_DELAY`    | 6                   | `0110`       |
-| Driver Door Countdown | `T_DRIVER_DELAY` | 8                   | `1000`       |
-| Passenger Door Delay  | `T_PASSENGER_DELAY` | 15              | `1111`       |
-| Siren Alarm Duration  | `T_ALARM_ON`     | 10                  | `1010`       |
+![Timing Parameters](https://github.com/user-attachments/assets/0e84c2cc-1158-4d03-9f83-7284642f4f3a)
 
 These values are stored in memory and can be reprogrammed at runtime.
 
