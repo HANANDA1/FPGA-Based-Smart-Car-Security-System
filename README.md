@@ -6,8 +6,6 @@
 ![Simulator](https://img.shields.io/badge/simulation-ModelSim-yellow.svg)
 ![Language-Verilog](https://img.shields.io/badge/language-Verilog-blue.svg)
 ![Language-SystemVerilog](https://img.shields.io/badge/language-SystemVerilog-purple.svg)
-![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
-![Design](https://img.shields.io/badge/system-Anti--Theft-red.svg)
 
 ---
 A concealed and reprogrammable smart anti-theft system designed using Verilog HDL and system verilog for high-end vehicles such as Porsche. This project enhances security by detecting unauthorized access, activating an audible alarm, and securely disabling the fuel pump unless the correct hidden owner-authenticated sequence is performed.
