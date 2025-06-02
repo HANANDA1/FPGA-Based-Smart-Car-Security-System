@@ -145,6 +145,10 @@ Below are key results verified from simulations and waveform analyses:
 
 ---
 
+## Real-Life Scenarios
+![Case 1](https://github.com/user-attachments/assets/974ac255-71a4-43d1-975b-abe2bd6e4d3c)
+![Case 2](https://github.com/user-attachments/assets/d025e84e-cb7a-4a01-9ab6-e5faf6b616ce)
+
 ## Future Work
 ![Future Work](https://github.com/user-attachments/assets/cc221805-1d87-4963-913d-44125f2e213c)
 
@@ -153,3 +157,6 @@ Below are key results verified from simulations and waveform analyses:
 This project is licensed under the MIT License.
 
 ---
+
+## Regards
+![Regards](https://github.com/user-attachments/assets/92608e0c-3c93-41c8-af62-2d24b6ebf4ca)
