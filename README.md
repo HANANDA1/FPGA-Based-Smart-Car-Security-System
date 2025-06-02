@@ -14,7 +14,7 @@ A concealed and reprogrammable smart anti-theft system designed using Verilog HD
 
 ![Overview](https://github.com/user-attachments/assets/816f66b0-ebda-4f4c-8c5c-d8bd88b1f953)
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -31,7 +31,7 @@ A concealed and reprogrammable smart anti-theft system designed using Verilog HD
 
 ---
 
-## 🧩 Overview
+## Overview
 ![Requirements](https://github.com/user-attachments/assets/05d98c02-13f2-4dd2-b8a9-c99020dce5f6)
 
 ---
@@ -44,24 +44,24 @@ o	And secretly, it locks the fuel line so even if the thief stops the barking, t
 
 ---
 
-## 🛡️ Major Features
+## Major Features
 
 ![Features](https://github.com/user-attachments/assets/08a4c65b-4b0b-421e-913d-a95b4a74900d)
 
 ---
-## 📊 System Diagram
+## System Diagram
 
 ![System Diagram](https://github.com/user-attachments/assets/a9d8ab87-3d3f-4e11-93dd-da52cccc5eb8)
 
 ---
 
-## 📊 Block Diagram
+## Block Diagram
 
 ![Block Diagram](https://github.com/user-attachments/assets/a5fed45a-767d-456a-9b54-c06c48a949d0)
 
 ---
 
-## 🔁 FSM Diagram
+## FSM Diagram
 
 ![FSM 1](https://github.com/user-attachments/assets/9ef9ec2d-25ab-4e28-b11f-5a8acdf068b6)
 ![FSM 2](https://github.com/user-attachments/assets/531ca61f-ab6d-437d-88b2-84e6d049efc8)
@@ -76,24 +76,49 @@ These values are stored in memory and can be reprogrammed at runtime.
 
 ---
 
-## 🧰 Tools and Technologies
+## Tools and Technologies
 
-- **HDL**: Verilog & SystemVerilog
-- **Simulation**: ModelSim 10.5
-- **Waveform Debug**: GTKWave
+- **HDL**: Verilog / SystemVerilog
+- **Simulation Tool**: ModelSim-Altera Edition
+- **Synthesis Tool**: Quartus / Vivado
+- **Waveform Viewer**: GTKWave
+- **Editor**: Visual Studio Code (VS Code)
 - **Version Control**: Git
-- **Editing**: VS Code / Vim
-- **Platform**: Intel/Altera FPGA (Simulated)
+- **Target FPGA Board**: DE1-SoC (Intel/Altera)
 
 ---
 
-## 📁 Repository Structure
-├── sourcecode/ # Verilog modules (RTL) ├── testbenches/ # SystemVerilog testbenches ├── simulations/ # VCD/FSDB waveform files ├── docs/ # Report, Results, and References ├── README.md # This file ├── Project_Report.pdf ├── Project_Results.docx └── Presentation.pptx
-
+## Modules Hierarchy
+![Module Names](https://github.com/user-attachments/assets/f0a6fe07-a957-4747-ae7e-2660534f0b48)
+![Implementation](https://github.com/user-attachments/assets/2a4319c8-b6bf-408e-99f4-752280fa6c6b)
 
 ---
+## RTL Design
 
-## ✅ Simulation Checklist
+## Anti-Theft FSM
+![Anti Theft FSM](https://github.com/user-attachments/assets/ad84820e-78d6-4333-9d7e-b265d9e8b42f)
+
+## Fuel Pump Logic
+![Fuel Pump Logic](https://github.com/user-attachments/assets/e9a33914-d97a-4afa-af29-a2e2ce4c9df5)
+
+## Siren Generator
+![Siren Generator](https://github.com/user-attachments/assets/96d5bcd0-8522-45dd-b072-28dd37005abe)
+
+## Time Parameters
+![Time Parameters](https://github.com/user-attachments/assets/7e2aeee6-a185-42db-9071-230e1ce97a2f)
+
+## Timer 1Hz
+![Timer 1Hz](https://github.com/user-attachments/assets/12f0d55f-ceb1-42c5-85dc-ba6bf004566f)
+
+## Time Parameters With Reprogrammability
+![Time Parameters With Reprogrammability](https://github.com/user-attachments/assets/7161ec07-8c3a-4cac-b28f-db104ef76070)
+
+## Debouncer
+![Debouncer](https://github.com/user-attachments/assets/56f276f6-c0e2-46bb-a01e-d7ff7a6961fe)
+
+
+
+## Simulation Checklist
 
 - [x] **FSM Behavior**: Verified transitions between all states (Armed, Triggered, Alarm, Disarmed)
 - [x] **Timer Accuracy**: All time intervals matched expected durations
@@ -106,7 +131,7 @@ These values are stored in memory and can be reprogrammed at runtime.
 
 ---
 
-## 📈 Results
+## Results
 
 Below are key results verified from simulations and waveform analyses:
 
@@ -120,34 +145,11 @@ Below are key results verified from simulations and waveform analyses:
 
 ---
 
-## 📸 Screenshots Placeholders
+## Future Work
+![Future Work](https://github.com/user-attachments/assets/cc221805-1d87-4963-913d-44125f2e213c)
 
-> Replace the links below with actual screenshots once available.
+## License
 
-- `fsm_behavior.png` — FSM state transition waveform  
-- `fuel_pump_unlock.png` — Verification of disarm sequence  
-- `siren_output.png` — Siren modulating signal (440Hz ↔ 880Hz)  
-- `time_parameters_config.png` — Reprogrammability test  
-- `system_diagram.png` — Top-level system diagram  
-- `rtl_view.png` — Quartus RTL viewer snapshot  
-- `led_indicator_behavior.png` — LED blinking/solid logic visualization  
+This project is licensed under the MIT License.
 
 ---
-
-## 🚀 Future Work
-
-- 🔌 Deploy system on DE1-SoC or DE2-115 FPGA board
-- 🛜 Add wireless intrusion notifications (Bluetooth/LoRa)
-- 🧠 Integrate more sensors (e.g., trunk, glass-break, shock)
-- 🔄 Connect FSM to CAN-bus for full-vehicle monitoring
-- 🔒 Implement anti-tamper logic and encrypted configuration
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-> 📌 _Developed as part of FPGA Digital Design coursework — includes RTL coding, simulation, and system-level integration._
