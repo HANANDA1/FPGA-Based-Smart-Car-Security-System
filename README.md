@@ -1,147 +1,108 @@
-# FPGA-Based-Smart-Car-Security-System
-![Project Status](https://img.shields.io/badge/status-Completed-brightgreen.svg)
-![Platform](https://img.shields.io/badge/platform-FPGA-blue.svg)
-![Tool-Vivado](https://img.shields.io/badge/tool-Vivado-ff69b4.svg)
-![Tool-Quartus](https://img.shields.io/badge/tool-Quartus-9cf.svg)
-![Simulator](https://img.shields.io/badge/simulation-ModelSim-yellow.svg)
-![Language-Verilog](https://img.shields.io/badge/language-Verilog-blue.svg)
-![Language-SystemVerilog](https://img.shields.io/badge/language-SystemVerilog-purple.svg)
+# FPGA-Based Smart Car Security System 🚗🔒
 
----
-A concealed and reprogrammable smart anti-theft system designed using Verilog HDL and system verilog for high-end vehicles such as Porsche. This project enhances security by detecting unauthorized access, activating an audible alarm, and securely disabling the fuel pump unless the correct hidden owner-authenticated sequence is performed.
+![FPGA Smart Car Security](https://img.shields.io/badge/FPGA%20Smart%20Car%20Security%20System-Ready-blue)
 
-![Overview](https://github.com/user-attachments/assets/816f66b0-ebda-4f4c-8c5c-d8bd88b1f953)
+Welcome to the **FPGA-Based Smart Car Security System** repository! This project focuses on creating an advanced anti-theft car security system that operates on an FPGA platform. Our goal is to provide real-time monitoring and control logic to enhance vehicle safety and prevent unauthorized access. 
 
-## Overview
-![Requirements](https://github.com/user-attachments/assets/05d98c02-13f2-4dd2-b8a9-c99020dce5f6)
+## Table of Contents
 
----
-## How the System Works 
-Think of the system like a guard dog that:
-o	Sleeps quietly until you leave the house.
-o	Starts watching when the house is empty.
-o	If someone opens the door, it gives them a few seconds — if they don’t prove they belong, it starts barking (alarm).
-o	And secretly, it locks the fuel line so even if the thief stops the barking, the car won’t move.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Hardware Requirements](#hardware-requirements)
+- [Software Requirements](#software-requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
----
+## Introduction
 
-## Major Features
+Car theft is a significant concern for vehicle owners. Traditional security systems often fall short in providing real-time monitoring and quick response. Our FPGA-based solution aims to bridge this gap. By leveraging the power of FPGA technology, we can implement a robust system that not only detects unauthorized access but also takes immediate action to secure the vehicle.
 
-![Features](https://github.com/user-attachments/assets/08a4c65b-4b0b-421e-913d-a95b4a74900d)
+## Features
 
----
-## System Diagram
+- **Real-Time Monitoring**: The system continuously monitors vehicle status and surroundings.
+- **Unauthorized Access Detection**: Detects any attempts to breach the vehicle's security.
+- **Immediate Response**: Activates alarms or locks to deter theft.
+- **User-Friendly Interface**: Simple controls for easy operation.
+- **Customizable Settings**: Users can adjust sensitivity and response settings according to their needs.
 
-![System Diagram](https://github.com/user-attachments/assets/a9d8ab87-3d3f-4e11-93dd-da52cccc5eb8)
+## Hardware Requirements
 
----
+To build and run the FPGA-Based Smart Car Security System, you will need the following hardware components:
 
-## Block Diagram
+- FPGA Development Board (e.g., Xilinx, Altera)
+- Sensors (e.g., motion sensors, door sensors)
+- Alarm System
+- Power Supply
+- Connecting Wires
+- Breadboard (optional for prototyping)
 
-![Block Diagram](https://github.com/user-attachments/assets/a5fed45a-767d-456a-9b54-c06c48a949d0)
+## Software Requirements
 
----
+The following software tools are necessary for programming and simulating the FPGA:
 
-## FSM Diagram
+- **FPGA Development Software**: Xilinx Vivado or Intel Quartus
+- **SystemVerilog or Verilog**: For hardware description and design
+- **Simulation Tools**: ModelSim or any compatible simulator
 
-![FSM 1](https://github.com/user-attachments/assets/9ef9ec2d-25ab-4e28-b11f-5a8acdf068b6)
-![FSM 2](https://github.com/user-attachments/assets/531ca61f-ab6d-437d-88b2-84e6d049efc8)
+## Installation
 
----
+1. **Download the Repository**: Clone the repository to your local machine using the command:
+   ```
+   git clone https://github.com/HANANDA1/FPGA-Based-Smart-Car-Security-System.git
+   ```
 
-## ⏱️ Timing Parameters
+2. **Install Required Software**: Ensure that you have the necessary FPGA development software installed.
 
-![Timing Parameters](https://github.com/user-attachments/assets/0e84c2cc-1158-4d03-9f83-7284642f4f3a)
+3. **Open the Project**: Launch your FPGA development software and open the project files located in the cloned repository.
 
-These values are stored in memory and can be reprogrammed at runtime.
+4. **Configure the FPGA Board**: Connect your FPGA board to your computer and configure it according to the software instructions.
 
----
+5. **Compile the Code**: Use the development software to compile the code. This process converts your design into a format that the FPGA can understand.
 
-## Tools and Technologies
+6. **Upload to FPGA**: Once compiled, upload the design to the FPGA board.
 
-- **HDL**: Verilog / SystemVerilog
-- **Simulation Tool**: ModelSim-Altera Edition
-- **Synthesis Tool**: Quartus / Vivado
-- **Waveform Viewer**: GTKWave
-- **Editor**: Visual Studio Code (VS Code)
-- **Version Control**: Git
-- **Target FPGA Board**: DE1-SoC (Intel/Altera)
+## Usage
 
----
+After successfully uploading the design to the FPGA, you can start using the Smart Car Security System. Here’s how:
 
-## Modules Hierarchy
-![Module Names](https://github.com/user-attachments/assets/f0a6fe07-a957-4747-ae7e-2660534f0b48)
+1. **Power On**: Turn on the vehicle and the security system.
+2. **Set Sensitivity**: Use the user interface to adjust the sensitivity of the sensors.
+3. **Test the System**: Simulate unauthorized access to test the system's response.
+4. **Monitor Status**: Keep an eye on the real-time monitoring display for alerts.
 
----
-## RTL Design and Simulation of Testbenches
-## Car Anti Theft Alarm System (main module)
-![main module](https://github.com/user-attachments/assets/572e3cee-2d6d-436a-81fa-87395789121d)
-![Testbench](https://github.com/user-attachments/assets/5673f2d5-7a24-4f29-8798-341f29c60993)
+## Contributing
 
-## Anti-Theft FSM
-![Anti Theft FSM](https://github.com/user-attachments/assets/ad84820e-78d6-4333-9d7e-b265d9e8b42f)
+We welcome contributions to improve the FPGA-Based Smart Car Security System. If you have ideas, suggestions, or code improvements, please follow these steps:
 
-## Fuel Pump Logic
-![Fuel Pump Logic](https://github.com/user-attachments/assets/e9a33914-d97a-4afa-af29-a2e2ce4c9df5)
-![Testbench](https://github.com/user-attachments/assets/8e62e9b8-6065-4e26-97d0-4425e8d684e5)
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes.
+4. Push your branch to your forked repository.
+5. Open a pull request.
 
-## Siren Generator
-![Siren Generator](https://github.com/user-attachments/assets/96d5bcd0-8522-45dd-b072-28dd37005abe)
-![Testbench](https://github.com/user-attachments/assets/4bcd9ea0-23d9-469d-b700-6a9bc49e283f)
-
-## Time Parameters
-![Time Parameters](https://github.com/user-attachments/assets/7e2aeee6-a185-42db-9071-230e1ce97a2f)
-![Testbench](https://github.com/user-attachments/assets/b781a824-084c-4ec6-8298-b4f9f626a801)
-
-## Timer 1Hz
-![Timer 1Hz](https://github.com/user-attachments/assets/12f0d55f-ceb1-42c5-85dc-ba6bf004566f)
-
-## Time Parameters With Reprogrammability
-![Time Parameters With Reprogrammability](https://github.com/user-attachments/assets/7161ec07-8c3a-4cac-b28f-db104ef76070)
-![Testbench](https://github.com/user-attachments/assets/81136a20-9d49-41a1-9019-a54c0950011d)
-
-## Debouncer
-![Debouncer](https://github.com/user-attachments/assets/56f276f6-c0e2-46bb-a01e-d7ff7a6961fe)
-
-## Simulation Checklist
-
-- [x] **FSM Behavior**: Verified transitions between all states (Armed, Triggered, Alarm, Disarmed)
-- [x] **Timer Accuracy**: All time intervals matched expected durations
-- [x] **Siren Modulation**: Alternating 440Hz and 880Hz tones confirmed
-- [x] **Fuel Pump Lock**: Disarm sequence required to restore pump power
-- [x] **LED Indicator**: Correct status signal behavior (blinking, solid, off)
-- [x] **Debouncer**: Inputs free from glitches or spurious toggles
-- [x] **Time Reprogrammability**: Parameters updated and reflected immediately
-- [x] **Testbenches**: Each module tested independently in ModelSim
-
----
-
-## Results
-
-Below are key results verified from simulations and waveform analyses:
-
-- ✅ **Auto-Arming Delay**: System enters Armed state exactly **6 seconds** after ignition off and all doors closed.
-- ✅ **Driver Door Trigger**: Countdown of **8 seconds** starts upon driver door open. LED solid during countdown.
-- ✅ **Siren Behavior**: Siren asserts if countdown expires, alternating tones confirmed via waveform.
-- ✅ **Fuel Pump Safety**: Fuel pump remains OFF until **brake + hidden switch** are pressed under ignition.
-- ✅ **Parameter Update**: New values loaded during reprogramming reflected instantly in next FSM cycle.
-- ✅ **No Metastability**: Debouncer module ensures all transitions are clean and glitch-free.
-- ✅ **FSM Coverage**: All FSM transitions including resets, armed/triggered/alarm/disarm verified.
-
----
-
-## Real-Life Scenarios
-![Case 1](https://github.com/user-attachments/assets/974ac255-71a4-43d1-975b-abe2bd6e4d3c)
-![Case 2](https://github.com/user-attachments/assets/d025e84e-cb7a-4a01-9ab6-e5faf6b616ce)
-
-## Future Work
-![Future Work](https://github.com/user-attachments/assets/cc221805-1d87-4963-913d-44125f2e213c)
+Your contributions will help enhance the functionality and reliability of this project.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
----
+## Contact
 
-## Regards
-![Regards](https://github.com/user-attachments/assets/92608e0c-3c93-41c8-af62-2d24b6ebf4ca)
+For questions or feedback, feel free to reach out:
+
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **GitHub**: [HANANDA1](https://github.com/HANANDA1)
+
+## Releases
+
+To download the latest release of the FPGA-Based Smart Car Security System, visit our [Releases](https://github.com/HANANDA1/FPGA-Based-Smart-Car-Security-System/releases) section. You can find the compiled files that need to be downloaded and executed for the system to work properly.
+
+## Conclusion
+
+The FPGA-Based Smart Car Security System represents a significant advancement in vehicle security. By utilizing FPGA technology, we can offer a solution that is both effective and efficient. Your involvement in this project can help make our vehicles safer for everyone.
+
+Thank you for visiting our repository!
